@@ -25,3 +25,18 @@ function areaCalculatorOfEllipse(firstId,secondId){
   const A=3.14156*x*y;
   return A;
 }
+document.getElementById('areaOfTriangle').addEventListener('click',function(){
+  const A= areaCalculatorOfTriangleOrRhombusOrPentagon("triangleInput1","triangleInput2");
+ //  console.log(A); 
+ // alert('Triangle area is');
+ alert(A);
+ })
+ document.getElementById('areaOfRectangle').addEventListener('click',function(){
+   const A= areaCalculatorOfRectangleOrParallelogram("rectangleInput1","rectangleInput2");
+   console.log(A);
+  })
+  document.getElementById('areaOfParallelogram').addEventListener('click',function(){
+   const A= areaCalculatorOfRectangleOrParallelogram("parallelogramInput1","parallelogramInput2");
+   console.log(A);
+  })
+ 
