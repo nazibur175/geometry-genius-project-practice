@@ -25,7 +25,150 @@
     </div>
   </header>
 
-  
+  <!-- main section  -->
+
+  <main class="m-8 ">
+    <div class="flex gap-3">
+     <!-- Triangle  -->
+     <div class="grid grid-cols-3  gap-4 ">
+       <div class="text-center rounded bg-blue-100 grid justify-center p-6">
+         <div>
+           <img src="images/triangle.png" alt="">
+         </div>
+         <div class="py-4">
+           <h1>Triangle</h1>
+          <p>Area(A) = 0.5 x b x h</p>
+         </div>
+         <div class="flex pb-5"> 
+           <input type="text"  id="triangleInput1" placeholder="b" class="w-20">
+           <p class="mx-3">cm</p>
+           <input type="text"  id="triangleInput2" placeholder="h" class="w-20">
+           <p class="mx-3">cm</p>
+         </div>
+         <div>
+           <button id="areaOfTriangle" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
+             Calculate
+           </button>
+         </div>
+       </div>
+ 
+       <!-- Rectangle  -->
+       <div class="text-center rounded bg-blue-100 grid justify-center p-6">
+         <div>
+           <img src="images/rectangle.png" alt="">
+         </div>
+         <div class="py-4">
+           <h1>Rectangle</h1>
+          <p>Area(A) = w x l</p>
+         </div>
+         <div class="flex pb-5"> 
+           <input type="text"  id="rectangleInput1" placeholder="w" class="w-20">
+           <p class="mx-3">cm</p>
+           <input type="text"  id="rectangleInput2" placeholder="l" class="w-20">
+           <p class="mx-3">cm</p>
+         </div>
+         <div>
+           <button id="areaOfRectangle" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
+             Calculate
+           </button>
+         </div>
+       </div>
+ 
+       <!-- parallelogram  -->
+       <div class="text-center rounded bg-blue-100 grid justify-center p-6">
+         <div>
+           <img src="images/parallelogram.png" alt="">
+         </div>
+         <div class="py-4">
+           <h1>Parallelogram</h1>
+          <p>Area(A) = b x h</p>
+         </div>
+         <div class="flex pb-5"> 
+           <input type="text"  id="parallelogramInput1" placeholder="b" class="w-20">
+           <p class="mx-3">cm</p>
+           <input type="text"  id="parallelogramInput2" placeholder="h" class="w-20">
+           <p class="mx-3">cm</p>
+         </div>
+         <div>
+           <button id="areaOfParallelogram" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
+             Calculate
+           </button>
+         </div>
+       </div>
+       
+       <!-- Rhombus  -->
+     <div class="text-center rounded bg-blue-100 grid justify-center p-6">
+         <div>
+           <img src="images/rhombus.png" alt="">
+         </div>
+         <div class="py-4">
+           <h1>Rhombus</h1>
+          <p>Area(A) = 0.5 x d1 x d2</p>
+         </div>
+         <div class="flex pb-5"> 
+           <input type="text"  id="rhombusInput1" placeholder="d1" class="w-20">
+           <p class="mx-3">cm</p>
+           <input type="text"  id="rhombusInput2" placeholder="d2" class="w-20">
+           <p class="mx-3">cm</p>
+         </div>
+         <div>
+           <button id="areaOfRhombus" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
+             Calculate
+           </button>
+         </div>
+       </div>
+ 
+       <!-- pentagon  -->
+       <div class="text-center rounded bg-blue-100 grid justify-center p-6">
+         <div >
+           <img class="px-5" src="images/pentagon.png" alt="">
+         </div>
+         <div class="py-4">
+           <h1>Pentagon</h1>
+          <p>Area(A) = 0.5 x p x b</p>
+         </div>
+         <div class="flex pb-5"> 
+           <input type="text"  id="pentagonInput1" placeholder="p" class="w-20">
+           <p class="mx-3">cm</p>
+           <input type="text"  id="pentagonInput2" placeholder="b" class="w-20">
+           <p class="mx-3">cm</p>
+         </div>
+         <div>
+           <button id="areaOfPentagon" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
+             Calculate
+           </button>
+         </div>
+       </div>
+ 
+       <!-- ellipse  -->
+       <div class="text-center rounded bg-blue-100 grid justify-center p-6">
+         <div>
+           <img src="images/ellipse.png" alt="">
+         </div>
+         <div class="py-4">
+           <h1>Ellipse</h1>
+          <p>Area(A) = 3.14156 x a x b</p>
+         </div>
+         <div class="flex pb-5"> 
+           <input type="text"  id="ellipseInput1" placeholder="a" class="w-20">
+           <p class="mx-3">cm</p>
+           <input type="text"  id="ellipseInput2" placeholder="b" class="w-20">
+           <p class="mx-3">cm</p>
+         </div>
+         <div>
+           <button id="areaOfEllipse" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
+             Calculate
+           </button>
+         </div>
+       </div>
+     </div>
+
+
+   
+    </div>
+
+
+ </main>
     <script src="js/index-js.js"></script> 
 </body>
 </html>
