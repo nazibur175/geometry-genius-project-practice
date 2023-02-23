@@ -40,3 +40,15 @@ document.getElementById('areaOfTriangle').addEventListener('click',function(){
    console.log(A);
   })
  
+  document.getElementById('areaOfRhombus').addEventListener('click',function(){
+    const A= areaCalculatorOfTriangleOrRhombusOrPentagon("rhombusInput1","rhombusInput2");
+    console.log(A);
+   })
+   document.getElementById('areaOfPentagon').addEventListener('click',function(){
+    const A= areaCalculatorOfTriangleOrRhombusOrPentagon("pentagonInput1","pentagonInput2");
+    console.log(A);
+   })
+   document.getElementById('areaOfEllipse').addEventListener('click',function(){
+    const A= areaCalculatorOfEllipse("ellipseInput1","ellipseInput2");
+    console.log(A);
+   })
