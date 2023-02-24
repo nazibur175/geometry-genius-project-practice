@@ -100,3 +100,12 @@ document.getElementById('areaOfTriangle').addEventListener('click',function(){
     const A= areaCalculatorOfEllipse("ellipseInput1","ellipseInput2");
     printArea('Ellipse ',A);
    })
+
+
+  //  Random Color Generator part 
+
+function randomColorGenerator(cartId)
+{
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.getElementById(cartId).style.backgroundColor="#" + randomColor;
+}
