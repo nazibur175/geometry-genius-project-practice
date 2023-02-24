@@ -1,3 +1,8 @@
+// blog section 
+document.getElementById('blog-btn').addEventListener('click',function(){
+  window.location.href = 'questionsAns.html';
+})
+
 
 function areaCalculatorOfTriangleOrRhombusOrPentagon(firstId,secondId){
   const x = parseFloat(document.getElementById(firstId).value);
