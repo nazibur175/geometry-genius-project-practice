@@ -12,14 +12,13 @@
 
 <body>
   <!-- header  -->
-
   <header class="flex justify-between p-5 bg-sky-100 m-8 rounded">
     <div class="header-content ">
       <h1 class="text-3xl font-semibold ">Interactive</h1>
       <p class="text-lg font-medium">Geometry Genius</p>
     </div>
     <div class="header-btn my-auto ">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+      <button id="blog-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
         Blog
       </button>
     </div>
@@ -28,7 +27,7 @@
   <!-- main section  -->
 
   <main class="m-8 ">
-    <div class="flex gap-3">
+    <div class="flex gap-3 ">
      <!-- Triangle  -->
      <div class="grid grid-cols-3  gap-4 ">
        <div class="text-center rounded bg-blue-100 grid justify-center p-6">
@@ -163,9 +162,13 @@
        </div>
      </div>
 
+
      <!-- area calculation section  -->
-    <div class="bg-blue-300 w-1/4 h-80 rounded text-center py-5 ">
-      <p class="underline">Area Calculation</p>
+    <div class="bg-blue-100 w-1/4 h-80 rounded  py-5 ">
+      <p class="underline text-center">Area Calculation</p>
+      <ol id="list-container" class="list-decimal px-7">
+        
+      </ol>
    </div>
    
     </div>

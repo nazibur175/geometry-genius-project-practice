@@ -1,3 +1,4 @@
+
 function areaCalculatorOfTriangleOrRhombusOrPentagon(firstId,secondId){
   const x = parseFloat(document.getElementById(firstId).value);
   document.getElementById(firstId).value='';
@@ -25,30 +26,41 @@ function areaCalculatorOfEllipse(firstId,secondId){
   const A=3.14156*x*y;
   return A;
 }
+
+function printArea(name,area){
+  const listContainer= document.getElementById('list-container');
+  const li= document.createElement('li');
+  li.innerText=name + area.toFixed(2) ;
+  listContainer.appendChild(li);
+}
+
 document.getElementById('areaOfTriangle').addEventListener('click',function(){
   const A= areaCalculatorOfTriangleOrRhombusOrPentagon("triangleInput1","triangleInput2");
- //  console.log(A); 
- // alert('Triangle area is');
- alert(A);
+  printArea('Triangle ',A);
  })
+
+
  document.getElementById('areaOfRectangle').addEventListener('click',function(){
    const A= areaCalculatorOfRectangleOrParallelogram("rectangleInput1","rectangleInput2");
-   console.log(A);
+   printArea('Rectangle ',A);
   })
+
   document.getElementById('areaOfParallelogram').addEventListener('click',function(){
    const A= areaCalculatorOfRectangleOrParallelogram("parallelogramInput1","parallelogramInput2");
-   console.log(A);
+   printArea('Parallelogram ',A);
   })
  
   document.getElementById('areaOfRhombus').addEventListener('click',function(){
     const A= areaCalculatorOfTriangleOrRhombusOrPentagon("rhombusInput1","rhombusInput2");
-    console.log(A);
+    printArea('Rhombus ',A);
    })
+
    document.getElementById('areaOfPentagon').addEventListener('click',function(){
     const A= areaCalculatorOfTriangleOrRhombusOrPentagon("pentagonInput1","pentagonInput2");
-    console.log(A);
+    printArea('Pentagon ',A);
    })
+
    document.getElementById('areaOfEllipse').addEventListener('click',function(){
     const A= areaCalculatorOfEllipse("ellipseInput1","ellipseInput2");
-    console.log(A);
+    printArea('Ellipse ',A);
    })
